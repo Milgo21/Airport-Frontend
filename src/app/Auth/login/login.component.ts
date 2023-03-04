@@ -5,6 +5,7 @@ import { AuthenticationService } from 'src/app/Services/authentication.service';
 import { AuthService } from 'src/app/Services/auth.service';
 import { Router } from '@angular/router';
 import { ErrorComponent } from 'src/app/error/error.component';
+import { Store } from '@ngrx/store';
 
 @Component({
   selector: 'app-login',
@@ -17,7 +18,7 @@ export class LoginComponent implements OnInit {
   form!:FormGroup
   error=null
   constructor(private fb:FormBuilder, private authentication:AuthenticationService, private auth :AuthService,
-    private router:Router
+    private router:Router, private store:Store<any>
     ){
 
   }

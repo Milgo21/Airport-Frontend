@@ -1,5 +1,5 @@
 import { createAction, props } from "@ngrx/store";
-import { AddBooking, Booking, Message } from "src/app/Interfaces";
+import { AddBooking, Booking, Message} from "src/app/Interfaces";
 
 
 export const getBookings = createAction('[Booking]-getBookings')
@@ -34,3 +34,5 @@ export const deleteBooking = createAction('[deleteBooking]-deleteBooking',props<
 export const deleteBookingSuccess = createAction('[deleteBooking]-deleteBookingSuccess', props<{message:Message}>())
 
 export const deleteBookingFail= createAction('[deleteBooking]-deleteBookingFail',props<{error:string}>())
+
+
