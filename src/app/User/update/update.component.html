@@ -1,1 +1,21 @@
-<p>update works!</p>
+<div class="container">
+  <div class="image-container">
+    <img src="https://www.google.com/imgres?imgurl=https%3A%2F%2Fmedia.cntraveler.com%2Fphotos%2F5ff5e6068c1276088c4c887a%2F4%3A3%2Fw_5972%2Ch_4479%2Cc_limit%2Fpyclwcrew-0241.jpg&imgrefurl=https%3A%2F%2Fwww.cntraveler.com%2Fstory%2Femirates-has-launched-a-premium-economy-cabin&tbnid=7mw7RCmQ8gUPvM&vet=12ahUKEwiutoanm8P9AhUhp0wKHVJVDm8QMygEegUIARDxAQ..i&docid=SbAK79ZSrO444M&w=5972&h=4479&q=emirates&ved=2ahUKEwiutoanm8P9AhUhp0wKHVJVDm8QMygEegUIARDxAQ" alt="" srcset="">
+  </div>
+  <form [formGroup]="updateForm" (ngSubmit)="updateProfile()">
+      <div>
+        <label for="name">Your name</label><br>
+        <input type="text" formControlName="name">
+      </div>
+      <div>
+        <label for="name">Email</label><br>
+        <input type="text" formControlName="email">
+      </div>
+      <div>
+        <label for="name">Password</label><br>
+        <input type="text" formControlName="password">
+      </div>
+      <input type="submit" value="update profile">
+  </form>
+
+</div>

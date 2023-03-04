@@ -1,0 +1,9 @@
+.container{
+  display: flex;
+  gap:15px;
+  background-color: bisque;
+}
+.image-container, form{
+  height: 400px;
+  width: 250px;
+}
