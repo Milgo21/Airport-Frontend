@@ -16,5 +16,8 @@ export class AuthenticationService {
   loginUser(user:LoginUser):Observable<LoginSuccess>{
     return this.http.post<LoginSuccess>('http://localhost:4000/auth/login',user)
   }
+  updateUser(id:string,updatedUser:User):Observable<User>{
+    return  this.http.put<User>(`http://localhost:4000/auth/user/${id}`, updatedUser)
+   }
 
 }
